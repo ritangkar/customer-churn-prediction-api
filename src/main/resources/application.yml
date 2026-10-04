@@ -1,0 +1,16 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: customer-churn-prediction-api
+
+churn:
+  risk:
+    low-ceiling: 0.30     # probability below this -> LOW
+    medium-ceiling: 0.60  # probability below this (and >= low-ceiling) -> MEDIUM, else HIGH
+
+logging:
+  level:
+    root: INFO
+    com.ritangkar.churnpredictor: INFO

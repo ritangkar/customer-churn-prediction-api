@@ -1,0 +1,26 @@
+{
+  "featureNames": ["tenure_months", "monthly_spend", "support_tickets_last_90d", "days_since_last_order", "discount_usage_rate", "nps_score", "is_subscribed"],
+  "means": [29.908333333333335, 3134.1107222222213, 1.1097222222222223, 90.57777777777778, 0.508236111111111, 5.030555555555556, 0.4361111111111111],
+  "stds": [17.0040824346521, 1640.556354997709, 1.0262742380710899, 52.45569088452502, 0.2899249420614257, 3.2457938118641763, 0.49590141144843086],
+  "weights": [-0.5407, -0.5361, 0.2736, 0.9097, 0.1496, -0.6952, -0.0091],
+  "bias": -0.5829,
+  "trainingMeta": {
+    "algorithm": "logistic-regression-gradient-descent",
+    "totalSamples": 900,
+    "trainSamples": 720,
+    "testSamples": 180,
+    "epochs": 4000,
+    "learningRate": 0.15,
+    "l2Lambda": 0.002,
+    "positiveClassWeight": 6.3469,
+    "finalTrainLoss": 0.5326,
+    "trainAccuracy": 0.7222,
+    "testAccuracy": 0.7333,
+    "baselineMajorityClassAccuracy": 0.8667,
+    "testPrecision": 0.3235,
+    "testRecall": 0.9167,
+    "testF1": 0.4783,
+    "testConfusionMatrix": {"truePositive": 22, "falsePositive": 46, "trueNegative": 110, "falseNegative": 2},
+    "trainedOn": "synthetic sample-data/customers.csv, not real customer data"
+  }
+}
